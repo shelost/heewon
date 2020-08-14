@@ -1,0 +1,77 @@
+.darkblue {
+  background: linear-gradient(45deg, #002861, black);
+}
+
+.darkred {
+  background: linear-gradient(45deg, #660c00, black);
+}
+
+.blue {
+  background: linear-gradient(45deg, #00327a, black);
+}
+
+.red {
+  background: linear-gradient(45deg, #660c00, black);
+}
+
+.orange {
+  background: linear-gradient(45deg, #802e00, black);
+}
+
+.yellow {
+  background: linear-gradient(45deg, #4d3300, black);
+}
+
+.purple {
+  background: linear-gradient(45deg, #3c005c, black);
+}
+
+.green {
+  background: linear-gradient(45deg, #107c00, black);
+}
+
+.phantom {
+  background: linear-gradient(45deg, #002e66, black);
+}
+
+.opal {
+  background: linear-gradient(45deg, #0e431b, black);
+}
+
+.blue {
+  background: linear-gradient(45deg, #005dcc, #0074ff);
+}
+
+.pink {
+  background: linear-gradient(45deg, #cc00cc, black);
+}
+
+.magenta {
+  background: linear-gradient(45deg, #5a0047, black);
+}
+
+.black-purple {
+  background: linear-gradient(45deg, #0a0010, #2c0043);
+}
+
+.black-green {
+  background: linear-gradient(45deg, #030d05, #07220d);
+}
+
+.black-blue {
+  background: linear-gradient(45deg, #000814, #00132e);
+}
+
+.black-pink {
+  background: linear-gradient(45deg, #0f000f, #330033);
+}
+
+.black-red {
+  background: linear-gradient(45deg, #0f0000, #330000);
+}
+
+.inactive {
+  -webkit-filter: grayscale(80%);
+          filter: grayscale(80%);
+}
+/*# sourceMappingURL=colors.css.map */

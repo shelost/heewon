@@ -1,0 +1,655 @@
+* {
+  font-family: Poppins, Questrial, sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+::-moz-selection {
+  background: white;
+  color: black;
+}
+
+::selection {
+  background: white;
+  color: black;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.4);
+}
+
+::-webkit-scrollbar-track {
+  background: black;
+}
+
+body {
+  background-color: black;
+  overflow-x: hidden;
+}
+
+@media screen and (min-width: 800px) {
+  ::-webkit-scrollbar {
+    width: 4px;
+    height: 0;
+  }
+  .main {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin-left: 2vw;
+    margin-top: 15vw;
+  }
+  .elems {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .title {
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 3vw;
+    font-weight: 500;
+    margin: 0;
+    margin-bottom: 2vw;
+    margin-top: 2vw;
+    width: 100%;
+  }
+  .title.top {
+    margin-top: 0;
+  }
+  .subtitle {
+    color: rgba(255, 255, 255, 0.4);
+    font-size: 2.3vw;
+    font-weight: 300;
+    width: 100%;
+    margin: 1vw;
+  }
+  .header {
+    color: rgba(255, 255, 255, 0.8);
+    margin: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .header .mast {
+    margin-left: 2vw;
+  }
+  .header .mast h1 {
+    font-size: 6vw;
+    font-weight: 600;
+    margin: 0;
+    margin-top: 0.5vw;
+    margin-bottom: -1vw;
+  }
+  .header .mast p {
+    font-size: 2vw;
+    font-weight: 400;
+    margin: 0;
+    color: rgba(255, 255, 255, 0.4);
+  }
+  .header .navbar {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-right: 2vw;
+  }
+  .header .navbar h2 {
+    color: rgba(255, 255, 255, 0.5);
+    font-weight: 400;
+    font-size: 2vw;
+    margin: 1vw;
+    -webkit-transition: 0.2s ease;
+    transition: 0.2s ease;
+  }
+  .header .navbar .nav-red:hover {
+    color: #ff7866;
+  }
+  .header .navbar .nav-purple:hover {
+    color: #d88fff;
+  }
+  .header .navbar .nav-blue:hover {
+    color: #66acff;
+  }
+  .header .navbar .nav-green:hover {
+    color: #8cff7c;
+  }
+  .header .navbar .nav-white:hover {
+    color: rgba(255, 255, 255, 0.8);
+  }
+  .elem {
+    position: relative;
+    border-radius: 1vw;
+    width: 29vw;
+    padding: 0.5vw;
+    height: 20vw;
+    margin: 0.9vw;
+    bottom: 0;
+    -webkit-box-shadow: 0px 5px 30px rgba(0, 0, 0, 0.2) inset;
+            box-shadow: 0px 5px 30px rgba(0, 0, 0, 0.2) inset;
+    -webkit-transition: 0.2s ease;
+    transition: 0.2s ease;
+  }
+  .elem .expo {
+    color: rgba(255, 255, 255, 0.9);
+    margin: 0.5vw;
+    -webkit-transition: 0.2s ease;
+    transition: 0.2s ease;
+  }
+  .elem .expo h1 {
+    font-weight: 600;
+    font-size: 2vw;
+    line-height: 2.3vw;
+    width: 90%;
+    margin: 0;
+    margin-bottom: 0.5vw;
+    -webkit-transition: 0.2s ease;
+    transition: 0.2s ease;
+    color: rgba(255, 255, 255, 0.7);
+  }
+  .elem .expo h1 span {
+    font-weight: 500;
+    font-size: 1.5vw;
+    margin: 0;
+    color: rgba(255, 255, 255, 0.5);
+  }
+  .elem .expo p {
+    font-weight: 400;
+    font-size: 1vw;
+    line-height: 1.3vw;
+    margin: 0;
+    color: rgba(255, 255, 255, 0.5);
+    width: 50%;
+  }
+  .elem img {
+    height: 60%;
+    position: absolute;
+    bottom: 18%;
+    right: 5%;
+    -webkit-transition: 0.2s ease;
+    transition: 0.2s ease;
+  }
+  .elem .tags {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    color: white;
+    position: absolute;
+    bottom: 0.1vw;
+    left: 0.3vw;
+    width: 97%;
+    height: 2.5vw;
+    overflow-x: scroll;
+    overflow-y: hidden;
+  }
+  .elem .tags p {
+    margin: 0.2vw;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    border-radius: 0.4vw;
+    padding: 0.1vw;
+    padding-left: 0.5vw;
+    padding-right: 0.5vw;
+    font-size: 0.8vw;
+    white-space: nowrap;
+    color: rgba(255, 255, 255, 0.7);
+  }
+  .elem:hover img {
+    -webkit-transform: scale(1.04);
+            transform: scale(1.04);
+  }
+  .elem:hover h1 {
+    color: rgba(255, 255, 255, 0.95);
+  }
+  .card {
+    position: relative;
+    border-radius: 1vw;
+    width: 20vw;
+    padding: 0.5vw;
+    height: 20vw;
+    margin: 1.5vw;
+    bottom: 0;
+    color: rgba(255, 255, 255, 0.7);
+    -webkit-box-shadow: 0px 5px 30px rgba(0, 0, 0, 0.2) inset;
+            box-shadow: 0px 5px 30px rgba(0, 0, 0, 0.2) inset;
+    -webkit-transition: 0.2s ease;
+    transition: 0.2s ease;
+  }
+  .card h1 {
+    font-weight: 500;
+    font-size: 2vw;
+    line-height: 2.3vw;
+    width: 90%;
+    margin: 0.5vw;
+    margin-bottom: 0.5vw;
+    -webkit-transition: 0.2s ease;
+    transition: 0.2s ease;
+    color: rgba(255, 255, 255, 0.7);
+  }
+  .card p {
+    font-weight: 400;
+    font-size: 1vw;
+    line-height: 1.3vw;
+    margin: 0;
+    color: rgba(255, 255, 255, 0.5);
+    width: 90%;
+    position: absolute;
+    bottom: 1vw;
+    left: 1vw;
+  }
+  .card img {
+    position: absolute;
+    height: 100%;
+    top: 0;
+    left: 0;
+    -webkit-transform: scale(0.6);
+            transform: scale(0.6);
+    -webkit-transition: 0.2s ease;
+    transition: 0.2s ease;
+  }
+  .card:hover img {
+    -webkit-transform: scale(0.63);
+            transform: scale(0.63);
+  }
+  .card:hover h1 {
+    color: rgba(255, 255, 255, 0.9);
+  }
+}
+
+@media screen and (max-width: 800px) {
+  ::-webkit-scrollbar {
+    width: 0px;
+    height: 0;
+  }
+  .main {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-top: 15vw;
+    width: 97vw;
+    -webkit-transition: 0.4s ease;
+    transition: 0.4s ease;
+  }
+  .main.active {
+    -webkit-transform: translateX(-30vw);
+            transform: translateX(-30vw);
+  }
+  .elems {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    width: 99vw;
+  }
+  .title {
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 10vw;
+    font-weight: 500;
+    margin: 0;
+    margin-bottom: 5vw;
+    margin-top: 5vw;
+    text-align: center;
+    width: 100%;
+  }
+  .subtitle {
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 7vw;
+    font-weight: 300;
+    width: 100%;
+    text-align: center;
+    margin: 0;
+    margin-top: 5vw;
+    margin-bottom: 5vw;
+  }
+  .header {
+    color: rgba(255, 255, 255, 0.8);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: auto;
+    width: 97vw;
+    height: 40vw;
+    margin-bottom: -15vw;
+    -webkit-transition: 0.4s ease;
+    transition: 0.4s ease;
+  }
+  .header .mast {
+    text-align: center;
+    -webkit-transition: 0.4s ease;
+    transition: 0.4s ease;
+  }
+  .header .mast h1 {
+    font-size: 12vw;
+    font-weight: 600;
+    margin: 0;
+    margin-top: 0.5vw;
+    margin-bottom: -1vw;
+    -webkit-transition: 0.4s ease;
+    transition: 0.4s ease;
+  }
+  .header .mast p {
+    font-size: 4vw;
+    font-weight: 400;
+    margin: 0;
+    color: rgba(255, 255, 255, 0.4);
+    -webkit-transition: 0.4s ease;
+    transition: 0.4s ease;
+  }
+  .header.active .mast {
+    -webkit-transform: translateX(-30vw);
+            transform: translateX(-30vw);
+  }
+  .header.active .mast h1 {
+    font-size: 10vw;
+  }
+  .header.active .mast p {
+    font-size: 3vw;
+  }
+  .navbar {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    margin-right: 2vw;
+    position: fixed;
+    top: 0;
+    right: -2vw;
+    z-index: 5;
+    height: 100vh;
+    width: 32vw;
+    right: -35vw;
+    -webkit-transition: 0.4s ease;
+    transition: 0.4s ease;
+  }
+  .navbar.active {
+    right: -2vw;
+  }
+  .navbar h2 {
+    color: rgba(255, 255, 255, 0.7);
+    font-weight: 300;
+    font-size: 6vw;
+    margin: 0;
+    margin-top: 3vw;
+    margin-bottom: 3vw;
+    -webkit-transition: 0.2s ease;
+    transition: 0.2s ease;
+  }
+  .navbar .nav-red:hover {
+    color: #ff7866;
+  }
+  .navbar .nav-purple:hover {
+    color: #d88fff;
+  }
+  .navbar .nav-blue:hover {
+    color: #66acff;
+  }
+  .navbar .nav-green:hover {
+    color: #8cff7c;
+  }
+  .navbar .nav-white:hover {
+    color: rgba(255, 255, 255, 0.8);
+  }
+  #navfab {
+    position: fixed;
+    width: 90px;
+    height: 90px;
+    right: 30px;
+    z-index: 7;
+    bottom: 30px;
+    border-radius: 80px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    background: linear-gradient(45deg, #b529ff, #ff0000);
+    -webkit-box-shadow: 0px 0px 50px black;
+            box-shadow: 0px 0px 50px black;
+  }
+  #navfab .bg {
+    background-color: black;
+    position: absolute;
+    border-radius: 80px;
+    left: 2%;
+    top: 2%;
+    width: 96%;
+    height: 96%;
+  }
+  #navfab .bar {
+    width: 50%;
+    height: 3px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    background-color: rgba(255, 255, 255, 0.8);
+    z-index: 8;
+    -webkit-transition: 0.2s ease;
+    transition: 0.2s ease;
+  }
+  #navfab:hover .bar {
+    background-color: white;
+  }
+  #dark {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 3;
+    visibility: hidden;
+    opacity: 0;
+    -webkit-transition: 0.4s ease;
+    transition: 0.4s ease;
+  }
+  #dark.active {
+    visibility: visible;
+    opacity: 1;
+  }
+  .elem {
+    position: relative;
+    border-radius: 2vw;
+    width: 85vw;
+    padding: 2vw;
+    height: 60vw;
+    margin-bottom: 5vw;
+    right: 0.5vw;
+    -webkit-box-shadow: 0px 5px 30px rgba(0, 0, 0, 0.2) inset;
+            box-shadow: 0px 5px 30px rgba(0, 0, 0, 0.2) inset;
+    -webkit-transition: 0.2s ease;
+    transition: 0.2s ease;
+  }
+  .elem .expo {
+    color: rgba(255, 255, 255, 0.9);
+    margin: 0.5vw;
+    -webkit-transition: 0.2s ease;
+    transition: 0.2s ease;
+    position: absolute;
+    top: 3vw;
+    left: 3vw;
+  }
+  .elem .expo h1 {
+    font-weight: 600;
+    font-size: 6vw;
+    line-height: 7vw;
+    margin: 0;
+    margin-bottom: 0.7vw;
+    -webkit-transition: 0.2s ease;
+    transition: 0.2s ease;
+    color: rgba(255, 255, 255, 0.8);
+  }
+  .elem .expo h1 span {
+    font-weight: 500;
+    font-size: 4vw;
+    margin: 0;
+    color: rgba(255, 255, 255, 0.5);
+  }
+  .elem .expo p {
+    font-weight: 400;
+    font-size: 2.7vw;
+    line-height: 3.7vw;
+    margin: 0;
+    width: 60%;
+    color: rgba(255, 255, 255, 0.5);
+  }
+  .elem img {
+    height: 65%;
+    position: absolute;
+    bottom: 17%;
+    right: 5%;
+    -webkit-transition: 0.2s ease;
+    transition: 0.2s ease;
+  }
+  .elem .tags {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    color: white;
+    position: absolute;
+    bottom: 0.8vw;
+    left: 1vw;
+    width: 98%;
+    height: 8vw;
+    overflow-x: scroll;
+    overflow-y: hidden;
+  }
+  .elem .tags p {
+    margin: 0.5vw;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 1.5vw;
+    padding: 0.5vw;
+    padding-left: 1vw;
+    padding-right: 1vw;
+    font-size: 2.1vw;
+    white-space: nowrap;
+    color: rgba(255, 255, 255, 0.7);
+  }
+  .elem:hover {
+    -webkit-transform: scale(1.02);
+            transform: scale(1.02);
+  }
+  .elem:hover img {
+    -webkit-transform: scale(1.05);
+            transform: scale(1.05);
+  }
+  .elem:hover h1 {
+    color: white;
+  }
+  .card {
+    position: relative;
+    border-radius: 3vw;
+    width: 65vw;
+    height: 65vw;
+    padding: 3vw;
+    margin: 3vw;
+    bottom: 0;
+    color: rgba(255, 255, 255, 0.8);
+    -webkit-box-shadow: 0px 5px 30px rgba(0, 0, 0, 0.2) inset;
+            box-shadow: 0px 5px 30px rgba(0, 0, 0, 0.2) inset;
+    -webkit-transition: 0.2s ease;
+    transition: 0.2s ease;
+  }
+  .card h1 {
+    font-weight: 600;
+    font-size: 6.5vw;
+    line-height: 8vw;
+    margin: 0.5vw;
+    margin-bottom: 0.5vw;
+    -webkit-transition: 0.2s ease;
+    transition: 0.2s ease;
+  }
+  .card p {
+    font-weight: 400;
+    font-size: 3vw;
+    line-height: 1.3vw;
+    margin: 0;
+    color: rgba(255, 255, 255, 0.5);
+    width: 90%;
+    position: absolute;
+    bottom: 5vw;
+    left: 3.5vw;
+  }
+  .card img {
+    position: absolute;
+    height: 100%;
+    top: 0;
+    left: 0;
+    -webkit-transform: scale(0.6);
+            transform: scale(0.6);
+    -webkit-transition: 0.2s ease;
+    transition: 0.2s ease;
+  }
+  .card:hover {
+    -webkit-transform: scale(1.02);
+            transform: scale(1.02);
+  }
+  .card:hover img {
+    -webkit-transform: scale(0.63);
+            transform: scale(0.63);
+  }
+  .card:hover h1 {
+    color: rgba(255, 255, 255, 0.9);
+  }
+}
+/*# sourceMappingURL=style.css.map */
